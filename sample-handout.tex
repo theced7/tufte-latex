@@ -29,6 +29,14 @@
 \newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
 \newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
 
+% Added packages
+\usepackage{siunitx} % to use units: \SI{0}{\celsius} 
+\sisetup{
+  locale = DE ,
+  per-mode = symbol
+} 
+
+
 \begin{document}
 
 \maketitle% this prints the handout title, author, and date
