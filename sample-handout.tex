@@ -29,6 +29,9 @@
 \newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
 \newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
 
+\usepackage{xspace}
+\newcommand{\abbr}[2]{\mbox{#1.\,#2.}\xspace} % for short abbrevations (e.g. \abbr{Z}{n}) 
+
 % Added packages
 \usepackage{siunitx} % to use units: \SI{0}{\celsius} 
 \sisetup{
