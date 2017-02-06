@@ -35,11 +35,18 @@
 \newenvironment{tablist}{\begin{itemize}[nosep]}{\end{itemize}} %no space before item (for tables)
 
 % Added packages
-\usepackage{siunitx} % to use units: \SI{0}{\celsius} 
+\usepackage{siunitx} % to use units: \[v=\SI{2.3}{\metre\per\second}\]
 \sisetup{
   locale = DE ,
-  per-mode = symbol
-} 
+  per-mode = symbol ,
+  tophrase=\text{ bis },
+  detect-weight=true, 
+  detect-family=true
+}
+
+\DeclareSIUnit[number-unit-product = {\,}]
+\cal{cal}
+\DeclareSIUnit\kcal{\kilo\cal}
 
 
 \begin{document}
