@@ -32,6 +32,16 @@
 \usepackage{xspace}
 \newcommand{\abbr}[2]{\mbox{#1.\,#2.}\xspace} % for short abbrevations (e.g. \abbr{Z}{n}) 
 
+\usepackage{tcolorbox} % frames around stuff
+\newtcolorbox{mybox}[3][]
+{
+  colframe = #2!25,
+  colback  = #2!10,
+  coltitle = #2!20!black,  
+  title    = #3,
+  #1,
+}
+
 \newenvironment{tablist}{\begin{itemize}[nosep]}{\end{itemize}} %no space before item (for tables)
 
 % Added packages
